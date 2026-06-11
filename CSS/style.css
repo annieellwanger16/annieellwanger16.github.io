@@ -1,0 +1,225 @@
+
+:root {
+    --bg-main: #FFF0F5; 
+    --bg-sidebar: #FFFFFF;
+    --pink-primary: #FFB6C1;
+    --pink-dark: #FF9EAE;
+    --pink-light: #FFE4E1;
+    --text-dark: #5A4A4E;
+    --text-light: #8A7A7E;
+    --shadow: 0 10px 25px rgba(255, 182, 193, 0.3);
+    --radius-large: 24px;
+    --radius-small: 16px;
+    --radius-pill: 50px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 260px;
+    background-color: var(--bg-sidebar);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 2px 0 15px rgba(0,0,0,0.03);
+}
+
+.profile-section {
+    text-align: center;
+}
+
+.blog-title {
+    color: var(--pink-dark);
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.hello-kitty-balanco {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buque-livro {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.lista-livros {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    padding: 0;
+}
+
+.certificado {
+    width: 170px; 
+    height: 80px;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.lista-certificados {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    padding: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-dark);
+    padding: 12px 20px;
+    border-radius: var(--radius-pill);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color: var(--pink-light);
+    color: var(--pink-dark);
+}
+
+
+.main-content {
+    flex: 1;
+    padding: 30px 40px;
+    overflow-y: auto;
+}
+
+
+.card {
+    background: #FFFFFF;
+    border-radius: var(--radius-large);
+    padding: 24px;
+    box-shadow: var(--shadow);
+}
+
+
+.banner {
+    background-color: var(--pink-primary);
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px; 
+}
+
+.banner-text {
+    z-index: 2;
+    max-width: 50%;
+}
+
+.banner-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.banner-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+
+button {
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #FFF;
+    border: 2px solid #FFF;
+    padding: 10px 25px;
+    border-radius: var(--radius-pill);
+    text-decoration: none;
+}
+
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+.btn-secondary:hover { background: #FFF; color: var(--pink-dark); }
+.full-width { width: 100%; margin-top: 15px; background-color: var(--pink-primary); color: white; }
+.full-width:hover { background-color: var(--pink-dark); color: white; }
+
+
+.bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1.2fr; 
+    gap: 25px;
+}
+
+
+.post-img {
+    width: 100%;
+    border-radius: var(--radius-small);
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.post-content h3 { font-size: 18px; margin-bottom: 5px; }
+.post-desc { color: var(--text-light); font-size: 14px; margin-top: 10px; }
+
+
+.files-section { display: flex; flex-direction: column; gap: 20px; }
+.files-header { position: relative; min-height: 200px; display: flex; flex-direction: column; justify-content: space-between;}
+.hk-flower { position: absolute; right: -20px; bottom: -20px; height: 180px; }
+.btn-small { background-color: var(--pink-primary); border: none; align-self: flex-start; padding: 8px 20px;}
+
+.small-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.small-card {
+    text-align: center;
+    padding: 15px;
+}
+
+.right-sidebar {
+    background: #FFF;
+    border-radius: var(--radius-large);
+    padding: 24px;
+    box-shadow: var(--shadow);
+}
+
+.img-calendario {
+    width: 300px; 
+    height: 300px;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.active-recipe {
+    background: var(--pink-light);
+    transform: scale(1.02);
+}
