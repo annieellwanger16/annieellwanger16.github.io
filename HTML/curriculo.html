@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Annie's Blog</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="profile-section">
+            <div>
+                <h2 class="blog-title">ANNIE'S BLOG</h2>
+            </div>
+        </div>
+
+        <div class="accessibility-controls">
+            <button onclick="alternarModo()" class="btn-ctrl">🌙 Modo Noturno</button>
+            <div class="font-controls">
+                <button onclick="diminuirFonte()" class="btn-ctrl">A-</button>
+                <button onclick="aumentarFonte()" class="btn-ctrl">A+</button>
+            </div>
+        </div>
+
+        <nav class="navigation">
+            <a href="../index.html" class="nav-link">🏠 Home</a>
+            <a href="./about.html" class="nav-link">👤 Sobre Mim</a>
+            <a href="./curriculo.html" class="nav-link active">📄 Currículo</a>
+            <a href="./receitas.html" class="nav-link">🍰 Receitas Favoritas</a>
+            <a href="./contato.html" class="nav-link">✉️ Contato</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        
+        <h1>Currículo</h1>
+
+        <div class="resume-header">
+            <h2>📄 Minha Trajetória Profissional & Acadêmica</h2>
+            <p>Um resumo das minhas competências, experiências e aprendizados.</p>
+        </div>
+
+        <div class="resume-container">
+            
+            <section class="card resume-section">
+                <h3>Histórico Acadêmico e Profissional</h3>
+                <table class="resume-table">
+                    <thead>
+                        <tr>
+                            <th>Período</th>
+                            <th>Instituição / Empresa</th>
+                            <th>Curso / Cargo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2026 - Atual</td>
+                            <td>Universidade de Passo Fundo</td>
+                            <td>Ciência da computação</td>
+                        </tr>
+                        <tr>
+                            <td>2025 - Atual</td>
+                            <td>Imobiliária Império</td>
+                            <td>Assistente administrativa/adm de condomínios</td>
+                        </tr>
+                        <tr>
+                            <td>2021 - 2025</td>
+                            <td>Escola de Idiomas Wizard</td>
+                            <td>Inglês Avançado / Fluente</td>
+                        </tr>
+                        <tr>
+                            <td>2023 - 2024</td>
+                            <td>Senai/Stara</td>
+                            <td>Desenvolvimento mobile</td>
+                        </tr>
+                        <tr>
+                            <td>2021 - 2022</td>
+                            <td>Instituto Mananger</td>
+                            <td>Curso de empreendedorismo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <div class="resume-grid-bottom">
+
+                <section class="card certificates-card">
+                    <h3>Certificações Complementares</h3>
+                    <ul class="certificates-list">
+                        <li><strong>Informática Kids (2019):</strong> Ferramentas básicas de Informática e pacote office.</li>
+                        <li><strong>Certificado de aluna destaque:</strong> Escola NSL (2022).</li>
+                    </ul>
+                </section>
+                
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="../JavaScript/blog.js"></script>
+</body>
+</html>

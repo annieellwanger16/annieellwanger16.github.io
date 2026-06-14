@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Annie's Blog</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="profile-section">
+            <div>
+                <h2 class="blog-title">ANNIE'S BLOG</h2>
+            </div>
+        </div>
+
+        <div class="accessibility-controls">
+            <button onclick="alternarModo()" class="btn-ctrl">🌙 Modo Noturno</button>
+            <div class="font-controls">
+                <button onclick="diminuirFonte()" class="btn-ctrl">A-</button>
+                <button onclick="aumentarFonte()" class="btn-ctrl">A+</button>
+            </div>
+        </div>
+
+        <nav class="navigation">
+            <a href="../index.html" class="nav-link">🏠 Home</a>
+            <a href="./about.html" class="nav-link">👤 Sobre Mim</a>
+            <a href="./curriculo.html" class="nav-link">📄 Currículo</a>
+            <a href="./receitas.html" class="nav-link">🍰 Receitas Favoritas</a>
+            <a href="./contato.html" class="nav-link active">✉️ Contato</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        
+        <h1>Contato</h1>
+
+        <div class="contact-header">
+            <h2>✉️ Mande uma Mensagem!</h2>
+            <p>Tem alguma dúvida, sugestão ou quer apenas conversar? Preencha o formulário abaixo.</p>
+        </div>
+
+        <section class="card contact-card">
+            <form action="#" method="POST" class="contact-form">
+                
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui..." required minlength="3">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" placeholder="Sobre o que você quer falar?" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem com carinho..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary full-width form-submit-btn">Enviar Mensagem ✨</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <script src="../JavaScript/blog.js"></script>
+</body>
+</html>
