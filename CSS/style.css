@@ -41,7 +41,7 @@ body {
     background: #FFFFFF;
     border-radius: var(--radius-large);
     padding: 24px;
-    box-shadow: var(--shadow);
+    
 }
 
 /* ==========================================
@@ -180,7 +180,6 @@ body {
     background: #FFF;
     border-radius: var(--radius-large);
     padding: 24px;
-    box-shadow: var(--shadow);
 }
 
 .img-calendario {
@@ -190,7 +189,6 @@ body {
     object-fit: cover;
 }
 
-/* Botões padrões do Banner/Gerais */
 button {
     cursor: pointer;
     border: none;
@@ -221,7 +219,6 @@ button {
     padding: 20px;
     border-radius: var(--radius-large);
     margin-bottom: 30px;
-    box-shadow: var(--shadow);
 }
 
 .about-grid {
@@ -267,6 +264,23 @@ button {
     object-fit: cover;
 }
 
+.about-inner-gallery {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.inner-img {
+    flex: 1; 
+    width: 50%;
+    height: 160px; 
+    object-fit: cover;
+    border-radius: var(--radius-small);
+    transition: transform 0.2s ease;
+}
+
+
 /* ==========================================
    5. PÁGINA: CONTATO
    ========================================== */
@@ -276,7 +290,6 @@ button {
     padding: 20px 25px;
     border-radius: var(--radius-large);
     margin-bottom: 30px;
-    box-shadow: var(--shadow);
 }
 
 .contact-header h2 { margin-bottom: 5px; }
@@ -345,7 +358,6 @@ button {
     padding: 20px 25px;
     border-radius: var(--radius-large);
     margin-bottom: 30px;
-    box-shadow: var(--shadow);
 }
 
 .resume-header h2 { margin-bottom: 5px; }
@@ -454,7 +466,6 @@ button {
     padding: 15px 30px;
     border-radius: var(--radius-large);
     margin-bottom: 40px; 
-    box-shadow: var(--shadow);
     width: 100%;
 }
 .recipes-header h2 { margin-bottom: 0; color: var(--text-dark); text-align: center; }
@@ -472,11 +483,6 @@ button {
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.recipe-box:hover { 
-    transform: translateY(-5px); 
-    box-shadow: 0 15px 35px rgba(255, 182, 193, 0.4);
 }
 
 .recipe-cover { width: 100%; height: 200px; object-fit: cover; }
@@ -527,12 +533,6 @@ button {
     margin: 15px 0;
     box-shadow: 0 4px 15px rgba(255, 182, 193, 0.4);
     transition: all 0.3s ease;
-}
-
-.btn-recipe-access:hover {
-    background-color: var(--pink-dark);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 158, 174, 0.6);
 }
 
 .btn-recipe-access:active {
@@ -616,7 +616,6 @@ body.dark-mode .sidebar {
     background-color: #1A1617 !important;
 }
 
-/* Escurece todos os blocos de cartões e cabeçalhos de todas as páginas */
 body.dark-mode .card, 
 body.dark-mode .right-sidebar, 
 body.dark-mode .about-header, 
@@ -628,7 +627,6 @@ body.dark-mode .recipes-header {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5) !important;
 }
 
-/* Colore os títulos com o rosa escuro para alto contraste */
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
@@ -638,8 +636,6 @@ body.dark-mode .banner-text h2 {
     color: #FF9EAE !important;
 }
 
-
-/* Controles de Acessibilidade no Modo Noturno */
 body.dark-mode .btn-ctrl {
     background-color: #3D2D31 !important;
     color: #FCEFF2 !important;
@@ -651,7 +647,6 @@ body.dark-mode .btn-ctrl:hover {
     color: #231E20 !important;
 }
 
-/* Tabelas e Habilidades no Modo Noturno */
 body.dark-mode .resume-table th {
     background-color: #3D2D31 !important;
     color: #FCEFF2 !important;
@@ -661,8 +656,6 @@ body.dark-mode .resume-table tbody tr:nth-child(even) { background-color: #25202
 body.dark-mode .resume-table tbody tr:hover { background-color: #3D2D31 !important; }
 body.dark-mode .skills-list li { background-color: #1A1617 !important; }
 
-
-/* Entradas Modo Noturno */
 body.dark-mode .form-group input,
 body.dark-mode .form-group textarea {
     background-color: #1A1617 !important;
@@ -685,7 +678,6 @@ body.dark-mode .form-group textarea:focus {
     gap: 15px;
 }
 
-/* Botão de Voltar */
 .btn-back {
     align-self: flex-start;
     text-decoration: none;
@@ -727,7 +719,6 @@ body.dark-mode .form-group textarea:focus {
     color: var(--text-dark);
 }
 
-/* Marcação amarela fofa que combina com o maracujá */
 .highlight-tag {
     background-color: #FFF275;
     color: #5A4A4E;
@@ -736,7 +727,6 @@ body.dark-mode .form-group textarea:focus {
     font-weight: 600;
 }
 
-/* Foto do Mousse na página interna */
 .mousse-figure {
     width: 100%;
     margin: 0;
@@ -751,7 +741,6 @@ body.dark-mode .form-group textarea:focus {
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
-/* Grid que separa ingredientes e preparo */
 .recipe-body-grid {
     display: flex;
     flex-direction: column;
@@ -767,7 +756,6 @@ body.dark-mode .form-group textarea:focus {
     padding-bottom: 8px;
 }
 
-/* Estilização das listas */
 .mousse-list, .mousse-list-ordered {
     padding-left: 22px;
     line-height: 1.7;
@@ -777,14 +765,13 @@ body.dark-mode .form-group textarea:focus {
 
 .mousse-list li {
     margin-bottom: 8px;
-    list-style-type: square; /* Quadrados bonitinhos na lista */
+    list-style-type: square; 
 }
 
 .mousse-list-ordered li {
     margin-bottom: 12px;
 }
 
-/* Área do depoimento do professor */
 .recipe-testimonial {
     margin-top: 15px;
     padding: 20px;
@@ -807,7 +794,6 @@ body.dark-mode .form-group textarea:focus {
     font-weight: 600;
 }
 
-/* --- ADAPTAÇÃO AO MODO NOTURNO --- */
 body.dark-mode .mousse-header-section h1,
 body.dark-mode .recipe-body-grid h2 {
     color: #FF9EAE !important;
