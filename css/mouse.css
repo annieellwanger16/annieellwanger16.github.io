@@ -1,0 +1,146 @@
+.mousse-center-container {
+    max-width: 750px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-back {
+    align-self: flex-start;
+    text-decoration: none;
+    color: var(--pink-dark);
+    font-weight: 600;
+    font-size: 14px;
+    transition: transform 0.2s;
+}
+.btn-back:hover {
+    transform: translateX(-3px);
+}
+
+.mousse-card {
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.mousse-header-section {
+    text-align: center;
+}
+
+.mousse-header-section h1 {
+    font-size: 32px;
+    color: var(--pink-dark);
+    margin-bottom: 5px;
+}
+
+.weblab-tag {
+    font-size: 13px;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+.recipe-intro-text {
+    font-size: 16px;
+    margin-top: 10px;
+    color: var(--text-dark);
+}
+
+.highlight-tag {
+    background-color: #FFF275;
+    color: #5A4A4E;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.mousse-figure {
+    width: 100%;
+    margin: 0;
+}
+
+.mousse-page-img {
+    width: 100%;
+    height: 35px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: var(--radius-small);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.recipe-body-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: left;
+}
+
+.recipe-body-grid h2 {
+    font-size: 20px;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+    border-bottom: 2px dashed var(--pink-light);
+    padding-bottom: 8px;
+}
+
+.mousse-list, .mousse-list-ordered {
+    padding-left: 22px;
+    line-height: 1.7;
+    font-size: 15px;
+    color: var(--text-dark);
+}
+
+.mousse-list li {
+    margin-bottom: 8px;
+    list-style-type: square; 
+}
+
+.mousse-list-ordered li {
+    margin-bottom: 12px;
+}
+
+.recipe-testimonial {
+    margin-top: 15px;
+    padding: 20px;
+    background-color: var(--bg-main);
+    border-left: 4px solid var(--pink-primary);
+    border-radius: 0 var(--radius-small) var(--radius-small) 0;
+    font-style: italic;
+    text-align: left;
+}
+
+.recipe-testimonial p {
+    font-size: 15px;
+    color: var(--text-dark);
+    margin-bottom: 5px;
+}
+
+.recipe-testimonial cite {
+    font-size: 13px;
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+body.dark-mode .mousse-header-section h1,
+body.dark-mode .recipe-body-grid h2 {
+    color: #FF9EAE !important;
+}
+
+body.dark-mode .recipe-body-grid h2 {
+    border-bottom-color: #3D2D31 !important;
+}
+
+body.dark-mode .recipe-testimonial {
+    background-color: #1A1617 !important;
+    border-left-color: #FF9EAE !important;
+}
+
+body.dark-mode .highlight-tag {
+    background-color: #4A3F16;
+    color: #FFE4E1;
+}
+
+body.dark-mode .btn-back {
+    color: #FF9EAE !important;
+}

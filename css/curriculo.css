@@ -1,0 +1,90 @@
+.resume-header {
+    background-color: var(--pink-light);
+    color: var(--text-dark);
+    padding: 20px 25px;
+    border-radius: var(--radius-large);
+    margin-bottom: 30px;
+}
+
+.resume-header h2 { margin-bottom: 5px; }
+.resume-header p { font-size: 15px; color: var(--text-light); }
+
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.resume-table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 15px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.resume-table th {
+    background-color: var(--pink-light);
+    color: var(--text-dark);
+    font-weight: 700;
+    padding: 12px 15px;
+    border-radius: var(--radius-small) var(--radius-small) 0 0; 
+}
+
+.resume-table td {
+    padding: 14px 15px;
+    border-bottom: 1px solid var(--pink-light);
+    color: var(--text-dark);
+}
+
+.resume-table tbody tr:nth-child(even) { background-color: #FFFDFE; }
+.resume-table tbody tr:hover {
+    background-color: var(--bg-main);
+    transition: background 0.2s ease;
+}
+
+.resume-grid-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 25px;
+}
+
+.skills-list, .certificates-list {
+    list-style: none; 
+    padding: 0;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+.skills-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    background-color: var(--bg-main);
+    padding: 10px 15px;
+    border-radius: var(--radius-small);
+    font-weight: 600;
+}
+
+.skills-list li span { font-size: 18px; }
+
+.certificates-list li {
+    font-size: 15px;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 15px;
+}
+
+.certificates-list li::before {
+    content: "•";
+    color: var(--pink-dark);
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
