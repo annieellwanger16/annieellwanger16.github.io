@@ -316,3 +316,26 @@ body.dark-mode .form-group input:focus,
 body.dark-mode .form-group textarea:focus {
     border-color: var(--pink-primary) !important;
 }
+
+body.dark-mode .card,
+body.dark-mode .card p,
+body.dark-mode .card li,
+body.dark-mode .card span,
+body.dark-mode .post-desc {
+    color: #FCEFF2 !important;
+}
+
+body.dark-mode .nav-link {
+    color: #FCEFF2 !important;
+}
+
+body.dark-mode .nav-link:hover, 
+body.dark-mode .nav-link.active {
+    background-color: #3D2D31 !important;
+    color: #FF9EAE !important;
+}
+
+body.dark-mode .files-section,
+body.dark-mode .small-cards-grid {
+    background-color: transparent !important;
+}

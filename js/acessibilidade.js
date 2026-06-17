@@ -1,44 +1,15 @@
 let modoEscuroAtivo = false;
 
 function alternarModo() {
-    const corpo = document.body;
-    const barraLateral = document.querySelector('.sidebar');
-    const cartoes = document.querySelectorAll('.card, .right-sidebar, .about-header, .contact-header');
-    const links = document.querySelectorAll('.nav-link');
-    const itensReceita = document.querySelectorAll('.recipe-item');
-    const inputs = document.querySelectorAll('.form-group input, .form-group textarea');
+    document.body.classList.toggle('dark-mode');
+    
     const botao = document.querySelector('.accessibility-controls button');
-
-    if (modoEscuroAtivo === false) {
-        corpo.style.backgroundColor = "#231E20";
-        corpo.style.color = "#FCEFF2";
-        if (barraLateral) barraLateral.style.backgroundColor = "#1A1617";
-        if (botao) botao.innerHTML = "☀️ Modo Claro";
-        
-        cartoes.forEach(card => card.style.backgroundColor = "#2D2527");
-        links.forEach(link => link.style.color = "#FCEFF2");
-        itensReceita.forEach(item => item.style.backgroundColor = "#1A1617");
-        inputs.forEach(input => {
-            input.style.backgroundColor = "#2D2527";
-            input.style.color = "#FCEFF2";
-        });
-
-        modoEscuroAtivo = true;
-    } else {
-        corpo.style.backgroundColor = "";
-        corpo.style.color = "";
-        if (barraLateral) barraLateral.style.backgroundColor = "";
-        if (botao) botao.innerHTML = "🌙 Modo Noturno";
-        
-        cartoes.forEach(card => card.style.backgroundColor = "");
-        links.forEach(link => link.style.color = "");
-        itensReceita.forEach(item => item.style.backgroundColor = "");
-        inputs.forEach(input => {
-            input.style.backgroundColor = "";
-            input.style.color = "";
-        });
-
-        modoEscuroAtivo = false;
+    if (botao) {
+        if (document.body.classList.contains('dark-mode')) {
+            botao.innerHTML = "☀️ Modo Claro";
+        } else {
+            botao.innerHTML = "🌙 Modo Noturno";
+        }
     }
 }
 
